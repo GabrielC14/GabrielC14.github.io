@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Festa de Aniversário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="fundo">
+        <video autoplay muted loop id="bg-video">
+        <source src="img\\183279-870457579.mp4" type="video/mp4">
+</video>
+
+    </div>
+
+    <main class="convite">
+    <img src="imagem-aniversariante.jpg" alt="Aniversariante" class="foto-aniversariante">
+    <h1>Festa de Aniversário - 50 anos 🎉</h1>
+    <p>🗓️ 22 de Junho às 19h<br>📍 Rua Exemplo, 123 – Curitiba</p>
+
+    <button id="btn-confirmar">Confirmar minha presença</button>
+
+    <form id="form" class="formulario">
+        <input type="text" id="nome" placeholder="Seu nome" required>
+        <input type="tel" id="telefone" placeholder="Seu Número de Whatsapp" required>
+    <button type="submit">Confirmo minha presença</button>
+    </form>
+
+    <div id="sucesso" class="confirmado">
+        <div class="icone">✔️</div>
+        <p>Presença confirmada!</p>
+        </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

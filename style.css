@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    overflow: hidden;
+    position: relative;
+}
+
+.fundo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+#bg-video {
+    width: 100vw;
+    height: auto;
+}
+
+.convite {
+    background: rgba(255, 255, 255, 0.95);
+    margin: auto;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    max-width: 100%;
+    width: 100vw;
+    height: 100vh;
+    max-height: 100vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.foto-aniversariante {
+    max-width: 90%;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #ea5517;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #c74410;
+}
+
+.formulario {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+    margin-top: 20px;
+}
+
+.formulario input {
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.confirmado {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    color: green;
+    margin-top: 20px;
+}
+
+.icone {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+/* Responsividade: central limitado em celulares, bordas visíveis em PCs */
+@media (min-width: 480px) {
+.convite {
+    width: 100%;
+    max-width: 12cm;
+    border-radius: 16px;
+}
+}
