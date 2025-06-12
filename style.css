@@ -63,15 +63,67 @@ h1 {
 
 p {
     text-align: center;
-    font-size: 16px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: white;
+}
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@700&display=swap');
+
+.titulo {
+    text-align: center;
     margin-bottom: 20px;
     color: white;
 }
 
+.linha1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 62px;
+}
+
+.linha2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 62px;
+}
+
+.linha3 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 80px;
+  font-weight: normal;
+  color: #fff;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #1e90ff,
+    0 0 20px #1e90ff,
+    0 0 40px #1e90ff;
+  animation: pulseGlow 2s ease-in-out infinite;
+  margin-top: 0px;
+}
+
+
+@keyframes pulseGlow {
+  0%, 100% {
+    text-shadow:
+      0 0 5px #fff,
+      0 0 10px #1e90ff,
+      0 0 20px #1e90ff,
+      0 0 40px #1e90ff;
+  }
+  50% {
+    text-shadow:
+      0 0 2px #fff,
+      0 0 8px #00bfff,
+      0 0 16px #00bfff,
+      0 0 32px #00bfff;
+  }
+}
+
+
+
+
 button {
     padding: 12px 24px;
     font-size: 16px;
-    background-color: #ea5517;
+    background-color: #00bfff;
     color: white;
     border: none;
     border-radius: 8px;
@@ -79,7 +131,7 @@ button {
 }
 
 button:hover {
-    background-color: #c74410;
+    background-color: #12b1e6;
 }
 
 .formulario {
@@ -117,4 +169,9 @@ button:hover {
     max-width: 12cm;
     border-radius: 16px;
 }
+}
+@keyframes gradientWave {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
