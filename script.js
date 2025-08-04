@@ -35,7 +35,7 @@ const formData = new FormData();
 formData.append("nome", nome);
 formData.append("telefone", telefone);
 
-fetch("https://script.google.com/macros/s/AKfycbxVDTb1M-Lg_eWG_F8RhPJ80tT1RLSGHEzBq2ghNEHHxxcidm1JBSIRZjKKM4K8BYrJ/exec", {
+fetch("https://script.google.com/macros/s/AKfycbz0g-DZ_U3iIaJS-fnKaSgQY8B-mVbqSzMP6ys4wGvTlafkMeKx5zj67k1fvYmswvuHFQ/exec", {
     method: "POST",
     body: formData,
 })
